@@ -1,0 +1,2 @@
+软连接 npm  install
+mklink /j node_modules %APPDATA%\Roaming\npm\node_modules
