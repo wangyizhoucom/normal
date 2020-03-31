@@ -1,0 +1,12 @@
+// 前端，在一个文件中导入多个图片实现简单方法
+
+const demoImgArr = ["SOV35","Pixel 3a","iPhone8" , "iPhone11" , "iPhoneXS","502SO",]
+const ticks = demoImgArr.map(item => require("../../resources/images/" + item + ".png"))
+
+let count = 0
+      demoImgArr.map((i, ind) => {
+        if (i == item.model) {
+          return count = ind;
+        }
+      })
+      item.phoneImage= ticks[count]
