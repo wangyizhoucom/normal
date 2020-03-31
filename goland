@@ -1,0 +1,13 @@
+user:		
+		
+GO111MODULE		on
+GOPATH		%USERPROFILE%\go
+GOPROXY		https://goproxy.cn
+PATH		%USERPROFILE%\go\bin;
+		
+		
+sys:		
+		
+GOPATH		E:\golang\go\gopath
+GOROOT		E:\golang\go\go-1.12
+Path		E:\golang\go\go-1.12\bin;
