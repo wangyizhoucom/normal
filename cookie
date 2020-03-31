@@ -1,0 +1,16 @@
+设置cookie如果不设置“path=/”有时会出现清空时不覆盖之前的cookie
+
+
+/**
+   * 设置cookie(临时方法)
+   */
+  setCookie: function(name, value) {
+      if (!navigator.cookieEnabled) {
+          message.warning("当前浏览器不支持Cookie，请先启用！");
+          return "";
+      }
+      // 设置有效期
+      let exp = new Date(); 
+      exp.setTime(exp.getTime() + 7 * 24 * 60 * 60 * 1000);
+      document.cookie = name + '=' + escape(value) + ";expires=" + exp.toGMTString()+"; path=/"; 
+  },
